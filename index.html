@@ -3,27 +3,72 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Quiz Universe — trivia quizzes for curious minds. Official support and legal information.">
-  <title>Quiz Universe — DREAM</title>
+  <meta name="description" content="Quiz Universe — a trivia game with Lumo the fox detective. Mix topics, learn why each answer is right. Free on Google Play.">
+  <title>Quiz Universe: Trivia Game — DREAM</title>
+  <link rel="canonical" href="https://pyasonau.github.io/">
+  <meta property="og:title" content="Quiz Universe: Trivia Game">
+  <meta property="og:description" content="Trivia with Lumo the fox detective: mix topics, learn why each answer is right.">
+  <meta property="og:image" content="https://pyasonau.github.io/lumo.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Quiz Universe",
+    "operatingSystem": "ANDROID",
+    "applicationCategory": "GameApplication",
+    "description": "Trivia with Lumo the fox detective: mix topics, learn why each answer is right.",
+    "installUrl": "https://play.google.com/store/apps/details?id=com.quizuniverse.app",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
   <style>
-    body { margin: 0; background: #f4f7fc; color: #182339; font: 18px/1.65 system-ui, sans-serif; }
-    main { max-width: 680px; margin: 8vh auto; padding: 32px; }
-    h1 { font-size: clamp(36px, 8vw, 56px); line-height: 1.1; }
-    a { color: #174fc4; text-underline-offset: 4px; }
-    nav { display: flex; flex-wrap: wrap; gap: 24px; margin: 32px 0; }
+    body { margin: 0; background: #0b1226; color: #e9edff; font: 18px/1.6 system-ui, -apple-system, sans-serif; }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 24px 64px; }
+    .kicker { color: #9fb4ff; font-size: 15px; letter-spacing: .04em; text-transform: uppercase; margin: 0; }
+    h1 { font-size: clamp(36px, 8vw, 56px); line-height: 1.1; margin: 8px 0 16px; }
+    .lead { font-size: 21px; color: #ffffff; margin: 0 0 28px; }
+    .badge img { width: 220px; height: auto; display: block; margin-left: -12px; }
+    .lumo { display: flex; gap: 20px; align-items: center; background: #151d3d; border-radius: 20px; padding: 20px; margin: 36px 0; }
+    .lumo img { width: 140px; height: 140px; flex: none; border-radius: 16px; }
+    .lumo p { margin: 0; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    a { color: #9fb4ff; text-underline-offset: 4px; }
+    footer { border-top: 1px solid #26305a; margin-top: 40px; padding-top: 20px; font-size: 16px; }
+    footer nav { display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 12px; }
+    @media (max-width: 520px) { .lumo { flex-direction: column; text-align: center; } }
   </style>
 </head>
 <body>
   <main>
-    <p>DREAM · Trivia &amp; discovery</p>
+    <p class="kicker">Trivia game · DREAM</p>
     <h1>Quiz Universe</h1>
-    <p>Explore trivia across science, history, culture and more. Learn something new, one question at a time.</p>
-    <nav aria-label="Legal information">
-      <a href="https://gist.github.com/PYasonau/25e17b67ea734b8e4c735a44a292e256">Privacy Policy</a>
-      <a href="https://gist.github.com/PYasonau/726216dac8a980110f21cc0233d04607">Terms of Use</a>
-    </nav>
-    <h2>Support</h2>
-    <p>Questions, purchase issues or a quiz correction? Email <a href="mailto:dream.quiz.support@gmail.com">dream.quiz.support@gmail.com</a>.</p>
+    <p class="lead">Trivia with Lumo the fox detective: mix topics, learn why each answer is right.</p>
+    <a class="badge" href="https://play.google.com/store/apps/details?id=com.quizuniverse.app&amp;referrer=utm_source%3Dpublisher_site%26utm_medium%3Dwebsite">
+      <img src="google-play-badge.png" alt="Get it on Google Play" width="646" height="250">
+    </a>
+
+    <section class="lumo" aria-label="Meet Lumo">
+      <img src="lumo.png" alt="Lumo, the fox detective" width="140" height="140">
+      <p><strong>Meet Lumo.</strong> A fox detective who levels up with every quiz you finish: 15 levels and six looks to unlock.</p>
+    </section>
+
+    <ul>
+      <li>More than 120 quizzes: science, history, geography, cinema, music, sports, culture and technology.</li>
+      <li>Your own quiz mix: pick topics, difficulty and 5–20 questions.</li>
+      <li>A short explanation after every answer, plus Hard Mode for double XP.</li>
+      <li>Free with ads, or optional Pro: no ads and up to 30 quizzes for offline play.</li>
+    </ul>
+
+    <footer>
+      <nav aria-label="Legal and support">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="mailto:dream.quiz.support@gmail.com">Support</a>
+      </nav>
+      <p>Questions, purchase issues or a quiz correction? Email <a href="mailto:dream.quiz.support@gmail.com">dream.quiz.support@gmail.com</a>.</p>
+      <p>Google Play and the Google Play logo are trademarks of Google LLC.</p>
+    </footer>
   </main>
 </body>
 </html>
